@@ -28,7 +28,7 @@ class TenantController extends Controller
     }
 
     public function viewDeposits(Request $request) {
-        $payments = Payment::where(
+        $payments = Payment::join('more_details', 'users.id', '=', 'more_details.user_id')->where(
             [
                 'user_id'=>$request->session()->get('user')->id,
                 'type'=>'deposit'
@@ -38,7 +38,9 @@ class TenantController extends Controller
     }
 
     public function profile(Request $request) {
-        $user = User::find($request->session()->get('user')->id);
+        $user = User::join('more_details', 'users.id', '=', 'more_details.user_id')
+                ->where('users.id', $request->session()->get('user')->id)
+                ->first();
         return view('profile', ['user'=>$user]);
     }
 }

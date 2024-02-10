@@ -15,7 +15,7 @@
                 </ul>
             </div>
         </div>
-        <div class="bg-gray-200 flex flex-col justify-center">
+        <div class="bg-white flex flex-col justify-center">
             @yield('form')
         </div>
     </div>

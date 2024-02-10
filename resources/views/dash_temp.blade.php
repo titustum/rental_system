@@ -9,7 +9,7 @@
             <h2 class="text-2xl font-bold">ROYALS REALTIME</h2>
         </a>
 
-        <a href="#" class="flex items-center">
+        <a href="{{ URL::to('profile') }}" class="flex items-center">
             <i class="fas fa-user-circle text-2xl"></i>
             <h3 class="ml-2 font-semibold">
                 @if(Session::has('user'))
@@ -21,7 +21,7 @@
 </nav>
 
 <main class="px-3 py-3">
-    <div class="mx-auto w-[96%] min-h-[96vh] lg:container">
+    <div class="mx-auto w-[96%] min-h-[80vh] py-4 lg:container">
         @yield('dashthing')
     </div>
 </main>

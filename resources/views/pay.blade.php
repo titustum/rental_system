@@ -11,16 +11,16 @@
             <form method="post" action="{{ route('client.pay') }}" class="grid gap-4 lg:grid-cols-2 mt-5">
                 <div class="px-4 w-[96%] md:w-full mx-auto flex flex-col justify-center bg-gray-400 rounded"> 
                         <div class="py-3">
-                            <h2 class="text-center text-green-600 text-2xl font-bold">SIMPLE PAYMENT</h2>
+                            <h2 class="text-center text-green-600 text-2xl font-bold underline">SIMPLE PAYMENT</h2>
                             <div class="flex ">
-                                <div class="mx-auto w-auto p-3 mt-3 text-xl text-white">
+                                <div class="mx-auto w-auto p-3 mt-3 text-xl lg:text-3xl font-bold text-white">
                                     <div class="flex py-1">
                                         <div>PayBill:</div>
-                                        <div class="ml-2 font-bold">247 247</div>
+                                        <div class="ml-2 font-extrabold text-blue-900">247 247</div>
                                     </div>
                                     <div class="flex py-1">
                                         <div>Account No:</div>
-                                        <div class="ml-2 font-bold">087 656 788</div>
+                                        <div class="ml-2 font-extrabold text-blue-900">672 138</div>
                                     </div>
                                 </div>
                             </div>  
