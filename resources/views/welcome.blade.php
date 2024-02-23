@@ -27,11 +27,11 @@
 
     <div class="mt-7">
         <label for="idno" class="sr-only">ID Number</label>
-        <input type="number" name="idno" id="idno" min="100000" value="{{ old('idno') }}" class="px-3 py-2 rounded border w-full" required placeholder="ID NO.">
+        <input type="number" name="idno" id="idno" min="100000" value="{{ old('idno') }}" class="px-3 py-2 rounded border border-black w-full" required placeholder="ID NO.">
     </div>
     <div class="mt-3">
         <label for="password" class="sr-only">Password</label>
-        <input type="password" name="password" id="password"  class="px-3 py-2 rounded border w-full" required placeholder="Password ***">
+        <input type="password" name="password" id="password"  class="px-3 py-2 rounded border border-black w-full" required placeholder="Password ***">
     </div>
     <div class="mt-3">
         <button class="px-3 py-2 rounded border w-full bg-green-300  hover:bg-green-600 focus:bg-green-600 text-black font-semibold">Signin <i class="fas fa-arrow-right"></i></button>

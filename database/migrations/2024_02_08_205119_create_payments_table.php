@@ -18,8 +18,7 @@ return new class extends Migration
             $table->string('mpesa_code');
             $table->string('amount');
             $table->string('phone_used');
-            $table->string('type');
-            $table->string('month');
+            $table->string('type'); 
             $table->timestamps();
         });
     }

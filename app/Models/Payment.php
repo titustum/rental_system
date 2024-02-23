@@ -9,5 +9,5 @@ class Payment extends Model
 {
     use HasFactory; 
 
-    protected $fillable = ['user_id', 'mpesa_code','amount','phone_used','month','type'];
+    protected $fillable = ['user_id', 'mpesa_code','amount','phone_used','type'];
 }

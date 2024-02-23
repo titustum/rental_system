@@ -21,23 +21,23 @@
 
     <div class="mt-7">
         <label for="firstname" class="sr-only">Full Name</label>
-        <input type="text" name="firstname" id="firstname" value="{{ old('firstname') }}" class="px-3 py-2 rounded border w-full" required placeholder="Firstname">
+        <input type="text" name="firstname" id="firstname" value="{{ old('firstname') }}" class="px-3 py-2 rounded border border-black w-full" required placeholder="Firstname">
     </div>
     <div class="mt-3">
         <label for="lastname" class="sr-only">Last Name</label>
-        <input type="text" name="lastname" id="lastname" value="{{ old('lastname') }}" class="px-3 py-2 rounded border w-full" required placeholder="lastname">
+        <input type="text" name="lastname" id="lastname" value="{{ old('lastname') }}" class="px-3 py-2 rounded border border-black w-full" required placeholder="lastname">
     </div>
     <div class="mt-3">
         <label for="idno" class="sr-only">ID Number</label>
-        <input type="number" name="idno" min="100000" id="idno" value="{{ old('idno') }}" class="px-3 py-2 rounded border w-full" required placeholder="ID Number">
+        <input type="number" name="idno" min="100000" id="idno" value="{{ old('idno') }}" class="px-3 py-2 rounded border border-black w-full" required placeholder="ID Number">
     </div>
     <div class="mt-3">
         <label for="personal_phone" class="sr-only">Phone Number</label>
-        <input type="number" min="10000000" name="personal_phone" id="personal_phone" value="{{ old('personal_phone') }}" class="px-3 py-2 rounded border w-full" required placeholder="Phone Number">
+        <input type="number" min="10000000" name="personal_phone" id="personal_phone" value="{{ old('personal_phone') }}" class="px-3 py-2 rounded border border-black w-full" required placeholder="Phone Number">
     </div>
     <div class="mt-3">
         <label for="password" class="sr-only">Password</label>
-        <input type="password" name="password" id="password" class="px-3 py-2 rounded border w-full" required placeholder="New password ***">
+        <input type="password" name="password" id="password" class="px-3 py-2 rounded border border-black w-full" required placeholder="New password ***">
     </div>
     <div class="mt-2">
         <input type="checkbox" name="agree" id="agree" class="py-2" required>

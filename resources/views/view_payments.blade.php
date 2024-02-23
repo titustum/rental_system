@@ -22,7 +22,7 @@
               <th scope="col" class="px-6 py-4">#</th>
               <th scope="col" class="px-6 py-4">Code</th>
               <th scope="col" class="px-6 py-4">Amount</th>
-              <th scope="col" class="px-6 py-4">Month</th> 
+              <th scope="col" class="px-6 py-4">Date Time</th> 
             </tr>
           </thead>
           <tbody>
@@ -33,14 +33,14 @@
             @foreach($payments as $pay)
             
             @php
-                $c++; $total=$pay->amount;
+                $c++; $total+=$pay->amount;
             @endphp
             <tr
               class="border-b bg-neutral-100 dark:border-neutral-500 dark:bg-neutral-700">
               <td class="whitespace-nowrap px-6 py-4 font-medium">{{ $c }}</td>
               <td class="whitespace-nowrap px-6 py-4">{{ $pay->mpesa_code }}</td>
-              <td class="whitespace-nowrap px-6 py-4">{{ number_format($pay->amount) }}</td>
-              <td class="whitespace-nowrap px-6 py-4">{{ $pay->month }}</td> 
+              <td class="whitespace-nowrap px-6 py-4">Ksh. {{ number_format($pay->amount) }}</td>
+              <td class="whitespace-nowrap px-6 py-4">{{ $pay->created_at }}</td> 
             </tr>
             @endforeach 
 

@@ -41,24 +41,19 @@
                     <input type="hidden" name="user_id" value="{{ Session::get('user')->id }}">
                     <div class="grid">
                         <label for="mpesa_code">M-PESA Transactional Code</label>
-                        <input type="text" name="mpesa_code" id="mpesa_code" required class="py-2 border rounded px-3 border-green-300 font-semibold" placeholder="e.g. SQRFGHJJSH">
+                        <input type="text" name="mpesa_code" id="mpesa_code" required class="py-2 border rounded px-3 border-black font-semibold" placeholder="e.g. SQRFGHJJSH">
                     </div>
                     <div class="mt-2 grid">
                         <label for="amount">Amount Paid</label>
-                        <input type="number" name="amount" id="amount" min="100" required class="py-2 border rounded px-3 border-green-300 font-semibold" placeholder="e.g. 4,000">
+                        <input type="number" name="amount" id="amount" min="100" required class="py-2 border rounded px-3 border-black font-semibold" placeholder="e.g. 4,000">
                     </div>
                     <div class="mt-2 grid">
                         <label for="phone_used">Phone No. Used</label>
-                        <input type="number" name="phone_used" min="1000000" id="phone" required class="py-2 border rounded px-3 border-green-300 font-semibold" placeholder="e.g. 0726543569">
-                    </div>
-
-                    <div class="mt-2 grid">
-                        <label for="month">Paid Month</label>
-                        <input type="month" name="month" min="1000000" required class="py-2 border rounded px-3 border-green-300 font-semibold">
-                    </div>
+                        <input type="number" name="phone_used" min="1000000" id="phone" required class="py-2 border rounded px-3 border-black font-semibold" placeholder="e.g. 0726543569">
+                    </div> 
                     <div class="mt-2 grid">
                         <label for="type">Type of Payment</label>
-                        <select name="type" id="type" required class="py-2 border rounded px-3 border-green-300 font-semibold">
+                        <select name="type" id="type" required class="py-2 border rounded px-3 border-black font-semibold">
                             <option value="">Select type</option>
                             <option>Rent</option>
                             <option>Deposit</option>

@@ -48,7 +48,6 @@ class AuthController extends Controller
             'mpesa_code'=>'required|min:6|unique:payments',
             'amount'=>'required|min:3',
             'phone_used'=>'required|min:3',
-            'month'=>'required|min:3',
             'type'=>'required|min:3'
         ]); 
         Payment::create($validated); 
